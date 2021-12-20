@@ -1,0 +1,40 @@
+/* @media only screen and (max-width: 1400px){
+    .leftDiv{
+        flex: 1 35%;
+    }
+    .centerDiv{
+        flex: 1 60%;
+    }
+    .rightDiv{
+        flex: 0.37;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .leftDiv{
+        flex: 1 45%;
+    }
+    .centerDiv{
+        flex: 1 45%;
+    }
+    .rightDiv{
+        flex: 0.489;
+    }
+} */
+@media only screen and (max-width: 785px){
+    .mainContent{
+        flex-direction: column;
+    }
+    .upperFooter{
+        flex-direction: column;
+        align-items: center;
+    }
+    .upperFooter img{
+        width: 150px;
+    }
+    .lowerFooter{
+        flex-direction: column;
+    }
+    .rightLowerFooter div{
+        padding: 0.4rem;
+    }
+}
