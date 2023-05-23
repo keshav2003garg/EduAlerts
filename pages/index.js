@@ -9,7 +9,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Joint Admission Counseling Delhi 2021 - DTU, DSEU, IGDTUW, IIIT-D, NSUT</title>
+        <title>EduAlerts Admission Counseling - DTU, DSEU, IGDTUW, IIIT-D, NSUT</title>
       </Head>
 
       <Header />

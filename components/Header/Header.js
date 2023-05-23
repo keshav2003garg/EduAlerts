@@ -18,7 +18,7 @@ export default () => {
             <div className="flex-space-btw">
                 <div className="headerBottomLeft flex-start"><img src="/images/headerBottomLeft.jpg" width="223" height="85.93"></img></div>
                 <div className="headerBottomCenter flex-center">
-                    <h1 className="jac font-bold">Joint Admission Counseling Delhi 2021</h1>
+                    <h1 className="jac font-bold">EduAlerts Admission Counseling</h1>
                     <h4 className="instituteName font-semiBold">DTU, DSEU, IGDTUW, IIIT-D, NSUT</h4>
                 </div>
                 <div className="headerBottomRight flex-end"><img src="/images/headerBottomRight.jpg" width="205" height="94.69"></img></div>
