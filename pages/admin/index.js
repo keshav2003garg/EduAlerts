@@ -21,7 +21,7 @@ export default () => {
 	const [marquee, setMarquee] = useState([]);
     const formHandler = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:3000/api/adminAuth', {
+        const response = await fetch('/api/adminAuth', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -35,35 +35,35 @@ export default () => {
         setAuth(json.auth)
     }
     const getImportantList = async () => {
-        const response = await fetch('http://localhost:3000/api/importantInfo', {
+        const response = await fetch('/api/importantInfo', {
             method: 'GET'
         })
         const json = await response.json();
         setImplist(json);
     }
     const getAdditionalLinks = async () => {
-		const response = await fetch('http://localhost:3000/api/additionalLinks', {
+		const response = await fetch('/api/additionalLinks', {
 			method: 'GET'
 		})
 		const json = await response.json();
 		setAddlist(json);
 	}
     const getNewsList = async () => {
-		const response = await fetch('http://localhost:3000/api/newsNevents', {
+		const response = await fetch('/api/newsNevents', {
 			method: 'GET'
 		})
 		const json = await response.json();
 		setNewsList(json);
 	}
 	const getUsefullLink = async () => {
-		const response = await fetch('http://localhost:3000/api/usefullLinks', {
+		const response = await fetch('/api/usefullLinks', {
 			method: 'GET'
 		})
 		const json = await response.json();
 		setUsefullLink(json);
 	}
     const getMarquee = async () => {
-		const response = await fetch('http://localhost:3000/api/marquee', {
+		const response = await fetch('/api/marquee', {
 			method: 'GET'
 		})
 		const json = await response.json();
@@ -113,7 +113,7 @@ export default () => {
 
             const handleRelease1 = async (e) => {
                 e.preventDefault();
-                const response = await fetch('http://localhost:3000/api/importantInfo', {
+                const response = await fetch('/api/importantInfo', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ export default () => {
             }
             const handleRelease2 = async (e) => {
                 e.preventDefault();
-                const response = await fetch('http://localhost:3000/api/additionalLinks', {
+                const response = await fetch('/api/additionalLinks', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -137,7 +137,7 @@ export default () => {
             }
             const handleRelease3 = async (e) => {
                 e.preventDefault();
-                const response = await fetch('http://localhost:3000/api/newsNevents', {
+                const response = await fetch('/api/newsNevents', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -149,7 +149,7 @@ export default () => {
             }
             const handleRelease4 = async (e) => {
                 e.preventDefault();
-                const response = await fetch('http://localhost:3000/api/usefullLinks', {
+                const response = await fetch('/api/usefullLinks', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -161,7 +161,7 @@ export default () => {
             }
             const handleRelease5 = async (e) => {
                 e.preventDefault();
-                const response = await fetch('http://localhost:3000/api/marquee', {
+                const response = await fetch('/api/marquee', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -173,7 +173,7 @@ export default () => {
             }
 
             const handleDelete = async(e)=>{
-                await fetch(`http://localhost:3000/api/deleteList?id=${e.target.id}`, {
+                await fetch(`/api/deleteList?id=${e.target.id}`, {
                     method: 'DELETE'
                 })
                 setImplistinput(null);

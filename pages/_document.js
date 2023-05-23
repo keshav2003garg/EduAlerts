@@ -10,7 +10,6 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    {/* <title>Joint Admission Counseling Delhi 2021 - DTU, NSUT, DSEU, IGDTUW, IIITD</title> */}
                     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
                     <script src="https://kit.fontawesome.com/01096a2386.js" crossorigin="anonymous"></script>
                 </Head>

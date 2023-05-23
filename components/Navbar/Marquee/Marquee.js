@@ -4,17 +4,13 @@ export default () => {
     const [marquee, setMarquee] = useState([]);
     const getMarquee = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/marquee', {
+            const response = await fetch('/api/marquee', {
                 method: 'GET'
             })
             const json = await response.json();
             setMarquee(json);
         } catch (error) {
-            const response = await fetch('http://192.168.1.7:3000/api/marquee', {
-                method: 'GET'
-            })
-            const json = await response.json();
-            setMarquee(json);
+            console.log(error)
         }
 	}
     useEffect(() => {

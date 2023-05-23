@@ -6,32 +6,24 @@ export default () => {
 	const [addlist, setAddlist] = useState([]);
 	const getImportantList = async () => {
 		try {
-			const response = await fetch('http://localhost:3000/api/importantInfo', {
+			const response = await fetch('/api/importantInfo', {
 				method: 'GET'
 			})
 			const json = await response.json();
 			setImplist(json);
 		} catch (error) {
-			const response = await fetch('http://192.168.1.7:3000/api/importantInfo', {
-				method: 'GET'
-			})
-			const json = await response.json();
-			setImplist(json);			
+			console.log(error);	
 		}
 	}
 	const getAdditionalLinks = async () => {
 		try {
-			const response = await fetch('http://localhost:3000/api/additionalLinks', {
+			const response = await fetch('/api/additionalLinks', {
 				method: 'GET'
 			})
 			const json = await response.json();
 			setAddlist(json);			
 		} catch (error) {
-			const response = await fetch('http://192.168.1.7:3000/api/additionalLinks', {
-				method: 'GET'
-			})
-			const json = await response.json();
-			setAddlist(json);			
+			console.log(error);
 		}
 	}
 	useEffect(() => {

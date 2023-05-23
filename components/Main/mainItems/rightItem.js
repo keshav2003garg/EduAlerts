@@ -6,32 +6,24 @@ export default () => {
     const [usefullLink, setUsefullLink] = useState([]);
     const getNewsList = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/newsNevents', {
+            const response = await fetch('/api/newsNevents', {
                 method: 'GET'
             })
             const json = await response.json();
             setNewsList(json);           
         } catch (error) {
-            const response = await fetch('http://192.168.1.7:3000/api/newsNevents', {
-                method: 'GET'
-            })
-            const json = await response.json();
-            setNewsList(json);         
+            console.log(error);         
         }
     }
     const getUsefullLink = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/usefullLinks', {
+            const response = await fetch('/api/usefullLinks', {
                 method: 'GET'
             })
             const json = await response.json();
             setUsefullLink(json);        
         } catch (error) {
-            const response = await fetch('http://192.168.1.7:3000/api/usefullLinks', {
-                method: 'GET'
-            })
-            const json = await response.json();
-            setUsefullLink(json);        
+            console.log(error);        
         }
     }
     useEffect(() => {
